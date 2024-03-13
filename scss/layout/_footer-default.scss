@@ -1,0 +1,143 @@
+.footer-default {
+  display: flex;
+  padding: 2.5rem 0 0rem 0;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  background: var(--primary-dark);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: -2rem;
+  @include desktop-small {
+    padding: 0rem;
+  }
+
+  .footer-default-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0 !important;
+    padding-top: 2.5rem;
+
+    .footer-default-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      align-self: stretch;
+      padding: 0rem 2rem;
+
+      @include desktop-small {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 3rem;
+      }
+
+      .footer-default-contact {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.625rem;
+
+        @include desktop-small {
+          width: 100%;
+        }
+
+        p {
+          font-size: 1.125rem;
+          margin-bottom: 1rem;
+        }
+
+        a {
+          color: var(--color-dark);
+          text-decoration: none;
+        }
+      }
+
+      .logo {
+        max-width: 138px;
+        height: auto;
+      }
+
+      .footer-default-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4375rem;
+        align-self: stretch;
+
+
+
+        .menu-item {
+          display: flex;
+          padding: 0.25rem;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 0.625rem;
+
+          a {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            color: var(--text-light);
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-default-cards {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1rem;
+
+      img {
+        height: 60px;
+      }
+    }
+
+
+  }
+}
+
+h4{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--text-light);
+
+}
+
+p{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--text-light);
+}
+
+.footer-default-bottom {
+  text-align: center;
+  display: flex;
+  padding: 24px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  background: var(--color-primary);
+  width: 100%;
+
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--color-white);
+  }
+}

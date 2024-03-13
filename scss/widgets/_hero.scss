@@ -1,0 +1,122 @@
+.hero {
+  display: flex;
+  padding: 0rem 0rem 2.5rem 0rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  // background: url(../../images/bg.png), 50% / cover no-repeat;
+  background-size: cover;
+  //background-color: var(--color-white);
+
+  @include mobile {
+    display: block;
+  }
+
+  @include desktop-small {
+    height: auto;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -1.2px;
+
+    @include desktop-small {
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px; /* 125% */
+      letter-spacing: -0.96px;
+
+      text-align: center;
+    }
+
+    span {
+      color: var(--color-primary);
+    }
+  }
+
+  &.medium {
+    height: 33.4375rem;
+
+    @include desktop-small {
+      height: auto;
+    }
+  }
+
+  .text_image_center {
+    flex-direction: column;
+    gap: 2rem !important;
+    flex-basis: 70%;
+    text-align: center;
+  }
+
+  .text_left__image_right {
+
+  }
+
+  .text_right__image_left {
+    flex-direction: row-reverse;
+  }
+
+  .hero-container {
+    display: flex;
+    padding: 4.875rem 2rem;
+    justify-content: center;
+    gap: 3rem;
+
+    @include mobile {
+      display: block;
+      width: 100%;
+    }
+
+    @include desktop-small {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero_text_center{
+      align-items: center;
+    }
+
+    .hero_text_left{
+      align-items: flex-start;
+      flex: 3 0 49% !important;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      padding-top: 4%;
+
+      @include desktop-small {
+        text-align: center;
+        align-items: center;
+        .button {
+          margin: 0 auto;
+        }
+      }
+      gap: 2rem;
+      flex: 1 0 60%;
+    }
+
+    .hero-image {
+      flex: 1 0 40%;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+
+      @include desktop-small {
+        max-width: 500px;
+      }
+      margin: 0 auto;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
