@@ -109,15 +109,17 @@
 						{% set footer_logo_size = '138px' %}
 					{% endif %}
 
+					{% include 'partials/footer.html.twig' %}
 
-					{% set footer_style = theme['footer_style'] %}
+
+					{# {% set footer_style = theme['footer_style'] %}
 
 					{% if footer_style == 'logo-right' %}
 						{% include 'partials/footer-right-logo.html.twig' %}
 					{% else %}
-						{# Default #}
-						{% include 'partials/footer-default.html.twig' %}
-					{% endif %}
+						
+						
+					{% endif %} #}
 				{% endblock footer %}
 
 				{% include 'partials/notifications.html.twig' %}

@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  padding: 0rem 0rem 2.5rem 0rem;
+  padding: 0rem  2.5rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
@@ -11,10 +11,12 @@
 
   @include mobile {
     display: block;
+
   }
 
   @include desktop-small {
     height: auto;
+    padding: 1rem;
   }
 
   h1 {
@@ -71,6 +73,7 @@
     @include mobile {
       display: block;
       width: 100%;
+      padding: 0rem;
     }
 
     @include desktop-small {

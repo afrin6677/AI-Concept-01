@@ -6,7 +6,7 @@
   gap: 0.625rem;
   align-self: stretch;
   background: var(--primary-dark);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:var(--default-font);
   margin-top: -2rem;
   @include desktop-small {
     padding: 0rem;
@@ -19,6 +19,12 @@
     gap: 2.5rem;
     padding: 0 !important;
     padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include desktop-small {
+      padding: auto;
+    }
 
     .footer-default-top {
       display: flex;
@@ -30,6 +36,7 @@
       @include desktop-small {
         flex-direction: column;
         gap: 1.5rem;
+        padding: 1rem;
         padding-top: 3rem;
       }
 
@@ -45,7 +52,7 @@
         }
 
         p {
-          font-size: 1.125rem;
+          font-size: 16px;
           margin-bottom: 1rem;
         }
 
@@ -133,11 +140,17 @@ p{
   background: var(--color-primary);
   width: 100%;
 
+  @include desktop-small {
+    padding: auto 16px;
+  }
+
   p {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     color: var(--color-white);
+
+    
   }
 }
